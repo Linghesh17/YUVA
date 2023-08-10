@@ -2370,13 +2370,25 @@ button {
 .testimonial-area-v1 .shape-img:after{
     position: absolute;
     content: '';
-    top: 0;
-    right: 0;
+    top: -12px;
+    right: -9px;
     width: 240px;
     height: 300px;
     border: 1px solid #fff;
     border-radius: 110px;
     z-index: -1;
+}
+.testimonial-area-v1 .testimonial-item .author-thumb{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
+    max-width: 90px;
+    height: 90px;
+    margin-right: 25px;
+}
+.testimonial-area-v1 .testimonial-item .author-thumb img{
+    width: 100%;
+    border-radius: 50%;
 }
 .testimonial-area-v1 .shape-img img{
     border-radius: 110px;
@@ -2390,15 +2402,17 @@ button {
     margin-bottom: 20px;
 }
 .testimonial-area-v1 .testimonial-item .testimonial-content h3{
-    font-size: 30px;
+    font-size: 32px;
     line-height: 55px;
     color: #fff;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .testimonial-area-v1 .testimonial-item .testimonial-content .author-title p,
 .testimonial-area-v1 .testimonial-item .testimonial-content .author-title h4{
     color: #fff;
+    font-size: 24px;
+    line-height: 34px;
 }
 .testimonial-slider-one .slick-dots {
     position: absolute;
