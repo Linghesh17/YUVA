@@ -427,7 +427,7 @@ button {
     z-index: 99999;
 }
 .preloader .loader {
-    margin: 0 auto;
+    margin: auto;
     
     position: relative;
     text-align: center;
@@ -440,7 +440,7 @@ button {
             animation: animate .5s linear infinite;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -25px;
     border-radius: 3px;
 }
 .preloader .pre-shadow { 
@@ -450,7 +450,7 @@ button {
     opacity: 0.1;
     position: absolute;
     top: 59px;
-    left: 0;
+    left: -25px;
     border-radius: 50%;
     -webkit-animation: shadow .5s linear infinite;
             animation: shadow .5s linear infinite;

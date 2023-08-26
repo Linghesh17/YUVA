@@ -6,9 +6,9 @@ $message=$_POST['message'];
 $message="Name: ".$name."<br>Emailid: ".$email."<br>Phone: ".$phone.'<br>'.$message;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-require 'Exception.php';
-require 'PHPMailer.php';
-require 'SMTP.php';
+require 'emailneeds/Exception.php';
+require 'emailneeds/PHPMailer.php';
+require 'emailneeds/SMTP.php';
 
 
 $mail=new PHPMailer(true);
@@ -26,13 +26,13 @@ $mail->SMTPSecure="ssl";
 $mail->Port=465;
 $mail->Username='211501043@rajalakshmi.edu.in';
 $mail->Password="Password123*";
-$mail->setFrom('attendanceregister@gmail.com');
-$mail->addAddress('211501043@rajalakshmi.edu.in');
+$mail->setFrom('yuvarecweb@gmail.com');
+$mail->addAddress('yiyuva2019@gmail.com');
 $mail->isHTML(true);
 $mail->Subject = "A MESSAGE FROM WEBSITE";
 $mail->Body = $message;
 $mail->send();?>
-<script>
+<script type="text/javascript">
 alert("Mail sent successfully");
-window.open("contact.html","_blank");</script>
-
+window.location.href = "contact.html";
+</script>
