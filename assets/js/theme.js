@@ -130,7 +130,7 @@
     //===== Counter js
     $('.count').counterUp({
         delay: 100,
-        time: 4000
+        time: 2000
     });
 
     //===== Magnific-popup js
