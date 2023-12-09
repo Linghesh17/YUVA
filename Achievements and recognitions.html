@@ -6,52 +6,55 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="assets\vendor\flip\extras\jquery.min.1.7.js"></script>
+        <script type="text/javascript" src="assets\vendor\flip\extras\modernizr.2.5.3.min.js"></script>
         <!--====== Title ======-->
         <title>Yi YUVA REC</title>
         <!--====== Favicon Icon ======-->
         <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
         <!--====== Default css ======-->
         <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/basic.css">
         <!--====== Style css ======-->
         <link rel="stylesheet" href="assets/css/style.css">
         <!--====== Responsive css ======-->
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
         #overlay {
             display: none;
             position: fixed;
+            z-index:999998;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
         }
-
         #popup {
             overflow-y: auto;
             z-index:999999;
             display: none;
             position: fixed;
-            width: 80%;
-            height: 80%;
+            width: 95%;
+            height: 90%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: white;
             padding: 20px;
             text-align: center;
+            justify-items: center;
         }
-
-        .popup-image {
-
-            max-width: 100%;
-            height: auto;
-        }
+        
+        .close {
+            position:relative;
+            top: 10px;
+            right: 10px;
+            font-size: 35px;
+            cursor: pointer;
+          }
+      
     </style>
     <body>
         <!--====== Start Preloader ======-->
@@ -165,6 +168,123 @@
         </section>
         <!--====== End Page-banner section ======-->
         <!--====== Start Team Details Section ======-->
+        <div id="flipbook"></div>
+        <section class="team-details-section pt-50 pb-90 position-relative z-1">
+            <div class="shape shape-one scene"><span data-depth="1"><img src="assets/images/shape/shape-7.png" alt=""></span></div>
+            <div class="shape shape-two scene"><span data-depth="2"><img src="assets/images/shape/shape-8.png" alt=""></span></div>
+            <div class="container">
+                <div class="team-details-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="img-holder mb-50 position-relative z-1 wow fadeInLeft">
+                                <img src="assets/images/Achievements/Communique.png" alt="" id="triggerImage" onclick="openPopup()">
+                                <div id="overlay"></div>
+                                <div id="popup">
+                                    <span class="close" onclick="closePopup()">&times;</span>
+                                    <div class="flipbook-viewport">
+                                        <div class="container">
+                                            <div class="flipbook">
+                                                <div style="background-image:url(pages/AnnualReport23_page-0001.jpg)"></div>
+                                                <div style="background-image:url(pages/blank.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0002.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0003.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0004.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0005.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0006.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0007.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0008.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0009.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0010.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0011.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0012.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0013.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0014.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0015.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0016.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0017.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0018.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0019.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0020.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0021.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0022.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0023.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0024.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0025.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0026.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0027.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0028.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0029.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0030.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0031.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0032.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0033.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0034.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0035.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0036.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0037.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0038.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0039.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0040.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0041.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0042.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0043.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0044.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0045.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0046.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0047.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0048.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0049.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0050.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0051.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0052.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0053.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0054.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0055.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0056.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0057.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0058.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0059.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0060.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0061.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0062.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0063.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0064.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0065.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0066.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0067.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0068.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0069.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0070.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0071.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0072.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0073.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0074.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0075.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0076.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0077.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0078.jpg)"></div>
+                                                <div style="background-image:url(pages/blank.jpg)"></div>
+                                                <div style="background-image:url(pages/AnnualReport23_page-0078.jpg)"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-wrapper mb-50 wow fadeInRight">
+                                <div class="text">
+                                    <h3 class="title">Communiquè 2023</h3>
+                                    <p class="position">2023</p>
+                                    <p align="justify">The Road Safety Communiquè is a testament to our unwavering commitment to safer roads. Crafted with precision and dedication, this document serves as a comprehensive guide, advocating for responsible behaviour on our thoroughfares. This document was proudly presented to General (Dr) V.K. Singh, PVSM, AVSM, YSM (Retd.), Hon'ble Minister of State for Road Transport & Highways & Civil Aviation, Gol at the first edition of the Yi National Road Summit 2023. The collaborative effort of talented individuals shaped its inception; Thrisha led the entire process and took charge of the design, playing a pivotal role in bringing the Road Safety Communiquè to fruition, Jeciyazhini lent her design expertise, ensuring visual clarity and impact. Shreeya and Ramya poured their knowledge and creativity into the content, ensuring its informative and persuasive nature. Steering this initiative with wisdom and expertise, Mogesh, Chair of Road Safety Yuva, provided invaluable guidance and oversight, ensuring the project's seamless execution. Together, this team has created a document that not only informs but inspires, underscoring our shared mission for a safer, more secure future on the roads.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="team-details-section pt-50 pb-90 position-relative z-1">
             <div class="shape shape-one scene"><span data-depth="1"><img src="assets/images/shape/shape-7.png" alt=""></span></div>
             <div class="shape shape-two scene"><span data-depth="2"><img src="assets/images/shape/shape-8.png" alt=""></span></div>
@@ -479,5 +599,61 @@
         <script src="assets/vendor/parallax.min.js"></script>
         <!--====== Main js ======-->
         <script src="assets/js/theme.js"></script>
+        <!--====== Flipbook js ======-->
+        <script src="assets\vendor\flip\samples\basic\js\basic.js"></script>
+        <script src="assets\vendor\flip\lib\turn.js"></script>
+        <script src="assets\vendor\flip\lib\turn.min.js"></script>
+        <script type="text/javascript">
+
+            function loadApp() {
+            
+                // Create the flipbook
+            
+                $('.flipbook').turn({
+                        // Width
+            
+                        width:922,
+                        
+                        // Height
+            
+                        height:600,
+            
+                        // Elevation
+            
+                        elevation: 50,
+                        
+                        // Enable gradients
+            
+                        gradients: true,
+                        
+                        // Auto center this flipbook
+            
+                        autoCenter: true
+            
+                });
+            }
+            
+            // Load the HTML4 version if there's not CSS transform
+            
+            yepnope({
+                test : Modernizr.csstransforms,
+                yep: ['assets/vendor/flip/lib/turn.js'],
+                nope: ['assets/vendor/flip/lib/turn.html4.min.js'],
+                both: ['css/basic.css'],
+                complete: loadApp
+            });
+            
+            </script>
+        <script>
+            function openPopup() {
+                document.getElementById("overlay").style.display = "block";
+                document.getElementById("popup").style.display = "block";
+            }
+        
+            function closePopup() {
+                document.getElementById("overlay").style.display = "none";
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
     </body>
 </html>
