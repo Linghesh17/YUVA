@@ -6,7 +6,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
 <script type="text/javascript" src="assets/flipbook/extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="assets/flipbook/extras/jquery-ui-1.8.20.custom.min.js"></script>
 <script type="text/javascript" src="assets/flipbook/extras/jquery.mousewheel.min.js"></script>
@@ -25,11 +25,11 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     #container {
-      display: flex;
+      display:flex;
     }
 
     #sidebar {
@@ -42,15 +42,19 @@
       position: relative;
     }
     .inside{
-      margin-top:45px;
+      margin-top:-15px;
       margin-left:25px;
+    }
+    .contents{
+      margin-top:25px;
     }
     #canvas {
       flex-grow: 1;
       padding: 20px;
       display: flex;
-      justify-content: center; /* Center horizontally */
+      justify-content: center; 
       align-items: center; 
+      overflow:visible
     }
 
     #toggle-btn {
@@ -70,25 +74,24 @@
       top: 10px;
       right: 10px;
     }
-
     @media only screen and (max-width: 600px) {
       #sidebar {
-        width: -50px;
+        width: 0;
       }
-
+    
       #canvas {
         margin-left: 0;
       }
-
+    
       #toggle-btn {
         display: none;
       }
-
+    
       #menu-btn {
         display: none;
       }
-      
     }
+        
   </style>
 </head>
 <body>
@@ -98,11 +101,12 @@
   <div id="sidebar">
     
     <div id="close-btn" onclick="closeMenu()">&times;</div>
-    <div class="site-branding">
+    <div class="site-branding contents">
       <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-1.png" alt="Site Logo"></a>
-  </div>
-    <nav class="inside">
-      <p align="justify"><b>INDEX</b></p>
+    </div>
+    <div class="contents">
+      <p align="center"><b>Contents</b></p><br></div>
+      <nav class="inside">
     <ul>
       <li><a href="#page/1">Front Cover</a></li>
       <li><a href="#page/3">Chair's Message</a></li>

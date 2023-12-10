@@ -7,7 +7,8 @@ body{
 }
 
 #canvas{
-	width: 960px;
+	width: 100vw;
+	max-width:960px;
 	height: 600px;
 	margin: 20px auto;
 }
@@ -30,7 +31,8 @@ body{
 
 .sample-docs{
 	margin-top:10px;
-	width:942px;
+	width:100vw;
+	max-width:942px;
 	height:600px;
 }
 
