@@ -39,21 +39,31 @@ body{
 	height:600px;
 	background:white;
 
-	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	box-shadow:0 0 20px rgba(0,0,0,0.85);
 }
 
 .sample-docs .hard{
 	background-image:url(../pics/covers.png);
 	background-repeat: no-repeat;
 	background-size:cover;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	box-shadow:0 0 20px rgba(0,0,0,0.85);
 }
 
 .sample-docs .p2{
 	background-position:-471px 0;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	box-shadow:0 0 20px rgba(0,0,0,0.85);
 }
 
 .sample-docs .p78{
@@ -67,10 +77,20 @@ body{
 
 .sample-docs .p79{
 	background-position:-902px 0;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	box-shadow:0 0 20px rgba(0,0,0,0.85);
 }
 
 .sample-docs .p80{
 	background-position:-1387px 0;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.85);
+	box-shadow:0 0 20px rgba(0,0,0,0.85);
 }
 
 .sample-docs .even .gradient{
