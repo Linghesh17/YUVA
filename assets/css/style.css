@@ -1984,6 +1984,7 @@ button {
 .portfolio-style-one .img-holder{
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 .portfolio-style-two .img-holder img,
 .portfolio-style-one .img-holder img{
