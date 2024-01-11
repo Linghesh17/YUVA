@@ -1220,7 +1220,6 @@
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
                                                             <span class="sub-title st-one">Meet Our Team</span>
                                                             <h2>Council Members</h2>
-                                                            <p>Presenting our exceptional council, a group of individuals who embody the epitome of expertise in their respective domains.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1569,7 +1568,6 @@
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
                                                             <span class="sub-title st-one">Meet Our Team</span>
                                                             <h2>Council Members</h2>
-                                                            <p>Presenting our exceptional council, a group of individuals who embody the epitome of expertise in their respective domains.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1972,7 +1970,9 @@
         <!--====== Main js ======-->
         <script src="assets/js/theme.js"></script>
         <script>
-            const overlay = document.getElementById('overlay');
+             const overlay = document.getElementById('overlay');
+  const triggerImage = document.querySelector('img[alt="triggerImage"]');
+
 
             function openPopup1() {
                 document.getElementById("overlay1").style.display = "block";
@@ -1980,6 +1980,7 @@
                 document.getElementById("footer-area").style.display = "none";
                 document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'hidden';
+                
             }
         
             function closePopup1() {
@@ -1987,10 +1988,19 @@
                 document.getElementById("popup1").style.display = "none";
                 document.getElementById("footer-area").style.display = "none";
                 document.getElementById("header-area").style.display="none";
+                document.removeEventListener('click', closePopupOutside1);
                 document.body.style.overflow = 'auto';
             }
-            overlay.addEventListener('click', function(event) {
-    if (event.target === popupOverlay) {
+            function closePopupOutside1(event) {
+    // Check if the click is outside the popup content and main image
+    if (!event.target.closest('.popup') && event.target !== triggerImage) {
+      closePopup1();
+    }
+  }
+
+  // Close the popup if the user clicks outside of the popup content
+  overlay1.addEventListener('click', function(event) {
+    if (event.target === overlay1) {
       closePopup1();
     }
   });
@@ -2006,8 +2016,22 @@
                 document.getElementById("overlay2").style.display = "none";
                 document.getElementById("popup2").style.display = "none";
                 document.getElementById("header-area").style.display="none";
+                document.removeEventListener('click', closePopupOutside2);
                 document.body.style.overflow = 'auto';
             }
+            function closePopupOutside2(event) {
+    // Check if the click is outside the popup content and main image
+    if (!event.target.closest('.popup') && event.target !== triggerImage) {
+      closePopup2();
+    }
+  }
+
+  // Close the popup if the user clicks outside of the popup content
+  overlay2.addEventListener('click', function(event) {
+    if (event.target === overlay2) {
+      closePopup2();
+    }
+  });
             function openPopup3() {
                 document.getElementById("overlay3").style.display = "block";
                 document.getElementById("popup3").style.display = "block";
@@ -2021,8 +2045,22 @@
                 document.getElementById("popup3").style.display = "none";
                 document.getElementById("footer-area").style.display = "none";
                 document.getElementById("header-area").style.display="none";
+                document.removeEventListener('click', closePopupOutside3);
                 document.body.style.overflow = 'hidden';
             }
+        function closePopupOutside3(event) {
+    // Check if the click is outside the popup content and main image
+    if (!event.target.closest('.popup') && event.target !== triggerImage) {
+      closePopup3();
+    }
+  }
+
+  // Close the popup if the user clicks outside of the popup content
+  overlay3.addEventListener('click', function(event) {
+    if (event.target === overlay3) {
+      closePopup3();
+    }
+  });
         </script>
           
 
