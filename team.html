@@ -69,14 +69,22 @@
     transform: translate(-50%, -55%);
     background-color: white;
     padding: 20px;
-    text-align: center;}
-        
-
+    text-align: center;
+}
         .popup-image {
 
             max-width: 100%;
             height: auto;
         }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #454545;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
     </style>
     <body>
         <!--====== Start Preloader ======-->
@@ -124,7 +132,7 @@
         <!--====== Start Header Section ======-->
         <header class="theme-header transparent-header">
             <!-- header Navigation -->
-            <div class="header-navigation navigation-style-v1">
+            <div class="header-navigation navigation-style-v1" id="header-area">
                 <div class="nav-overlay"></div>
                 <div class="container-fluid">
                     <div class="primary-menu">
@@ -894,6 +902,7 @@
                                     <div class="pop" id="popup1" >
                                         <section class="team-area team-area-v2 pt-30 pb-130">
                                             <div class="container">
+                                                    <span class="close-btn" onclick="closePopup1()">&times;</span>                                       
                                                 <div class="row justify-content-center">
                                                     <div class="col-lg-8">
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
@@ -903,277 +912,277 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".10s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/madhuvantichair.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
-                                                                <h5><p><br>Madhuvanti U</p></h5>
+                                                                <h4><p><br>Madhuvanti U</p></h4>
                                                                 <p class="position">YUVA Chair</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".15s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/ric.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Richard V</a></h5>
+                                                                <h4><a><br>Richard V</a></h4>
                                                                 <p class="position">YUVA Co Chair</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".20s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/santhosh SD.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>S D Santhosh</a></h5>
+                                                                <h4><a><br>S D Santhosh</a></h4>
                                                                 <p class="position">Chair - E & I</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".25s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/Nivedhitha1.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Nivedhitha</a></h5>
+                                                                <h4><a><br>Nivedhitha G K</a></h4>
                                                                 <p class="position">Co Chair - E & I </p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".30s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/harini.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Harini O K</a></h5>
+                                                                <h4><a><br>Harini O K</a></h4>
                                                                 <p class="position">Chair - Masoom</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".35s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/varsheni.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>Varsheni S</a></h5>
+                                                                <h4><a><br>Varsheni S</a></h4>
                                                                 <p class="position">Co Chair - Masoom</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/sanjana.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>Sanjana M</a></h5>
+                                                                <h4><a><br>Sanjana M</a></h4>
                                                                 <p class="position">Chair - Road Safety</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/mogesh1.jpeg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Mogesh Kanna</a></h5>
+                                                                <h4><a><br>Mogesh Kanna</a></h4>
                                                                 <p class="position">Co Chair - Road Safety</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/Senthamizh Arasan.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>Senthamizh Arasan</a></h5>
+                                                                <h4><a><br>Senthamizh Arasan</a></h4>
                                                                 <p class="position">Chair - Rural Initiative</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/sruthilaya.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Sruthilaya S</a></h5>
+                                                                <h4><a><br>Sruthilaya S</a></h4>
                                                                 <p class="position">Co Chair - Rural Intiative</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/Joshna james.JPG" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Joshna James</a></h5>
+                                                                <h4><a><br>Joshna James</a></h4>
                                                                 <p class="position">Chair - Arts and Culture</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/soundarya.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Soundarya</a></h5>
+                                                                <h4><a><br>Soundarya</a></h4>
                                                                 <p class="position">Chair - Health</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/Roshni 1.jpeg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>Roshini K S</a></h5>
+                                                                <h4><a><br>Roshini K S</a></h4>
                                                                 <p class="position">Co Chair - Health</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/preetha.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Preetha A</a></h5>
+                                                                <h4><a><br>Preetha A</a></h4>
                                                                 <p class="position">Chair - Sustainable Development</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/yoga.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Yoga Mithra S</a></h5>
+                                                                <h4><a><br>Yoga Mithra S</a></h4>
                                                                 <p class="position">Co Chair - Sustainable Development</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/aalia.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Aalia Thabasum</a></h5>
+                                                                <h4><a><br>Aalia Thabasum</a></h4>
                                                                 <p class="position">Chair - Membership Engagement</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/guna1.jpeg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h5><a><br>Gunasekar K</a></h5>
-                                                                <p class="position">Co Chair - Membership Engagement</p>
+                                                                <h4><a><br>Gunasekar K</a></h4>
+                                                                <p class="position">Co Chair - Membership Engagement/p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/aakash.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Akash P S</a></h5>
+                                                                <h4><a><br>Akash P S</a></h4>
                                                                 <p class="position">Chair - Accessibility</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/Pritika.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Pritika K</a></h5>
+                                                                <h4><a><br>Pritika K</a></h4>
                                                                 <p class="position">PRO</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/mithran1.jpeg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Mithran E</a></h5>
+                                                                <h4><a><br>Mithran E</a></h4>
                                                                 <p class="position">Communications Head</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mx-auto col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/sundar.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Sundar N</a></h5>
+                                                                <h4><a><br>Sundar N</a></h4>
                                                                 <p class="position">Design Head</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mx-auto col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/noor.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Noor Jesima</a></h5>
+                                                                <h4><a><br>Noor Jesima G</a></h4>
                                                                 <p class="position">Editorial Head</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mx-auto col-lg-2 col-md-6 col-sm-6">
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
                                                                 <img src="assets/images/team/ritha.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h5><a><br>Ritha M R</a></h5>
+                                                                <h4><a><br>Ritha M R</a></h4>
                                                                 <p class="position">Promotions Head</p>
                                                             </div>
                                                         </div>
@@ -1186,8 +1195,6 @@
                                         </section>
 
                                         <!-- Add more images as needed -->
-                                    
-                                        <button onclick="closePopup1()">Close</button>
                                     </div> 
                                 </div>
                                 <!-- Overlay and Popup -->
@@ -1202,11 +1209,12 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/sanjay1.jpeg" alt="" id="triggerImage" onclick="openPopup2()">
+                                    <img src="assets/images/team/sanjay1.jpg" alt="" id="triggerImage" onclick="openPopup2()">
                                     <div class="overlay"id="overlay2"></div>
                                     <div class="pop" id="popup2" >
                                         <section class="team-area team-area-v2 pt-30 pb-130">
                                             <div class="container">
+                                                <span class="close-btn" onclick="closePopup2()">&times;</span>  
                                                 <div class="row justify-content-center">
                                                     <div class="col-lg-8">
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
@@ -1220,10 +1228,10 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".10s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/ric.jpg" alt="">
+                                                                <img src="assets/images/team/sanjay1.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
-                                                                <h4><p><br>Richard V</p></h4>
+                                                                <h4><p><br>Sanjany Balagopal</p></h4>
                                                                 <p class="position">YUVA Chair</p>
                                                             </div>
                                                         </div>
@@ -1231,11 +1239,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".15s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Siva.jpg" alt="">
+                                                                <img src="assets/images/team/madhuvantichair.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Siva Santhosh</a></h4>
+                                                                <h4><a><br>Madhuvanti U</a></h4>
                                                                 <p class="position">YUVA Co Chair</p>
                                                             </div>
                                                         </div>
@@ -1243,35 +1251,23 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".20s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Joshna james.JPG" alt="">
+                                                                <img src="assets/images/team/Rishikaa.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Joshna James</a></h4>
-                                                                <p class="position">Chair - Accessibility</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".25s">
-                                                            <div class="img-holder">
-                                                                <img src="assets/images/team/charanyaa1.png" alt="">
-                                                            </div>
-                                                            <div class="text text-center">
-                                                                
-                                                                <h4><a><br>Charanya R</a></h4>
-                                                                <p class="position">Co Chair - Accessibility</p>
+                                                                <h4><a><br>Rishikaa Krishna</a></h4>
+                                                                <p class="position">Secretary</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".30s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Pritika.jpg" alt="">
+                                                                <img src="assets/images/team/sanjana.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Pritika K</a></h4>
+                                                                <h4><a><br>Sanjana M</a></h4>
                                                                 <p class="position">Chair - Arts and Culture</p>
                                                             </div>
                                                         </div>
@@ -1279,35 +1275,23 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".35s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/guna1.jpeg" alt="">
+                                                                <img src="assets/images/team/Divya V.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Gunasekar K</a></h4>
-                                                                <p class="position">Chair - Climate Change</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
-                                                            <div class="img-holder">
-                                                                <img src="assets/images/team/linghesh2.jpg" alt="">
-                                                            </div>
-                                                            <div class="text text-center">
-                                                               
-                                                                <h4><a><br>Linghesh B</a></h4>
-                                                                <p class="position">Co Chair - Climate Change</p>
+                                                                <h4><a><br>Divya V</a></h4>
+                                                                <p class="position">Co Chair - Arts and Culture</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Nivedhitha1.jpg" alt="">
+                                                                <img src="assets/images/team/Madhumitha Praksh.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Nivedhitha G K</a></h4>
+                                                                <h4><a><br>Madhumitha Prakash</a></h4>
                                                                 <p class="position">Chair - E & I</p>
                                                             </div>
                                                         </div>
@@ -1315,11 +1299,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeyanth.jpeg" alt="">
+                                                                <img src="assets/images/team/santhosh SD.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Jeyanth</a></h4>
+                                                                <h4><a><br>S D Santhosh</a></h4>
                                                                 <p class="position">Co Chair - E & I</p>
                                                             </div>
                                                         </div>
@@ -1327,11 +1311,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/roshni.png" alt="">
+                                                                <img src="assets/images/team/Gautham S.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Roshni K S</a></h4>
+                                                                <h4><a><br>Gautham S</a></h4>
                                                                 <p class="position">Chair - Health</p>
                                                             </div>
                                                         </div>
@@ -1339,11 +1323,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/ramya.png" alt="">
+                                                                <img src="assets/images/team/soundarya.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Ramya Kumari M</a></h4>
+                                                                <h4><a><br>Soundarya B</a></h4>
                                                                 <p class="position">Co Chair - Health</p>
                                                             </div>
                                                         </div>
@@ -1351,11 +1335,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/varsheni.png" alt="">
+                                                                <img src="assets/images/team/Priyanka.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Varsheni S</a></h4>
+                                                                <h4><a><br>Priyanka V</a></h4>
                                                                 <p class="position">Chair - Masoom</p>
                                                             </div>
                                                         </div>
@@ -1363,11 +1347,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/trisha.jpeg" alt="">
+                                                                <img src="assets/images/team/Nandita Sajeev.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Thrisha</a></h4>
+                                                                <h4><a><br>Nandita Sajeev</a></h4>
                                                                 <p class="position">Co Chair - Masoom</p>
                                                             </div>
                                                         </div>
@@ -1375,11 +1359,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/mogesh1.jpeg" alt="">
+                                                                <img src="assets/images/team/Sushanth.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Mogesh Kanna S</a></h4>
+                                                                <h4><a><br>Sushanth</a></h4>
                                                                 <p class="position">Chair - Road Safety</p>
                                                             </div>
                                                         </div>
@@ -1387,11 +1371,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/swathi.jpg" alt="">
+                                                                <img src="assets/images/team/sejal jha.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Swathi G</a></h4>
+                                                                <h4><a><br>Sejal Jha</a></h4>
                                                                 <p class="position">Co Chair - Road Safety</p>
                                                             </div>
                                                         </div>
@@ -1399,11 +1383,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/dharani.jpeg" alt="">
+                                                                <img src="assets/images/team/preetha.png" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Dharani J S</a></h4>
+                                                                <h4><a><br>Preetha A</a></h4>
                                                                 <p class="position">Chair - Rural Initiative</p>
                                                             </div>
                                                         </div>
@@ -1411,11 +1395,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/kavvya.jpeg" alt="">
+                                                                <img src="assets/images/team/yashwanth PL.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Kavvya J E</a></h4>
+                                                                <h4><a><br>Yashwanth P L</a></h4>
                                                                 <p class="position">Co Chair - Rural Initiative</p>
                                                             </div>
                                                         </div>
@@ -1423,47 +1407,72 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/mithran1.jpeg" alt="">
+                                                                <img src="assets/images/team/Senthamizh Arasan.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Mithran</a></h4>
-                                                                <p class="position">Chair - Sports</p>
+                                                                <h4><a><br>Sentamizh Arasan</a></h4>
+                                                                <p class="position">Chair - Sustainable Development </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeffrey.jpg" alt="">
+                                                                <img src="assets/images/team/Manasvinya.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Jeffrey Hamlin V</a></h4>
-                                                                <p class="position">Co Chair - Sports</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
-                                                            <div class="img-holder">
-                                                                <img src="assets/images/team/mirdhula.png" alt="">
-                                                            </div>
-                                                            <div class="text text-center">
-                                                                
-                                                                <h4><a><br>Mridhula B</a></h4>
-                                                                <p class="position">Communications Head</p>
+                                                                <h4><a><br>Manasvinya M</a></h4>
+                                                                <p class="position">Co Chair - Sustainable Development</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeci1.jpeg" alt="">
+                                                                <img src="assets/images/team/Roshan B.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Jeciyazhini J</a></h4>
+                                                                <h4><a><br>Roshan B</a></h4>
+                                                                <p class="position">Chair - Membership Engagement</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Padhma.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Padhmalakshmi</a></h4>
+                                                                <p class="position">Co Chair - Membership Engagement</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Sri vickyath.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Sri Vickyath</a></h4>
+                                                                <p class="position">Branding  Head</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Arjune B K.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Arjune B K</a></h4>
                                                                 <p class="position">Design Head</p>
                                                             </div>
                                                         </div>
@@ -1471,12 +1480,60 @@
                                                     <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/shreeya.jpeg" alt="">
+                                                                <img src="assets/images/team/divya n.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br> R</a></h4>
+                                                                <h4><a><br>Divya N</a></h4>
                                                                 <p class="position">Editorial Head</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Naveen P.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Naveen P</a></h4>
+                                                                <p class="position">project Head</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Srinath Reddy.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Srinath Reddy</a></h4>
+                                                                <p class="position">project Head</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Smirti S.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Smriti S</a></h4>
+                                                                <p class="position">Project Head</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                            <div class="img-holder">
+                                                                <img src="assets/images/team/Panbalan P K.jpg" alt="">
+                                                            </div>
+                                                            <div class="text text-center">
+                                                                
+                                                                <h4><a><br>Panbalan P K</a></h4>
+                                                                <p class="position">Project Head</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1488,8 +1545,6 @@
                                         </section>
 
                                         <!-- Add more images as needed -->
-                                    
-                                        <button onclick="closePopup2()">Close</button>
                                     </div> 
                                 </div>
                                 <div class="text text-center">
@@ -1503,11 +1558,12 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/nidhuna jose.png" alt="" id="triggerImage" onclick="openPopup3()">
+                                    <img src="assets/images/team/Nidhuna Jose.jpg" alt="" id="triggerImage" onclick="openPopup3()">
                                     <div class="overlay "id="overlay3"></div>
                                     <div class="pop" id="popup3" >
                                         <section class="team-area team-area-v2 pt-30 pb-130">
                                             <div class="container">
+                                                <span class="close-btn" onclick="closePopup3()">&times;</span>  
                                                 <div class="row justify-content-center">
                                                     <div class="col-lg-8">
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
@@ -1521,10 +1577,10 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".10s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/ric.jpg" alt="">
+                                                                <img src="assets/images/team/Nidhuna Jose.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
-                                                                <h4><p><br>Richard V</p></h4>
+                                                                <h4><p><br>Nidhuna Jose</p></h4>
                                                                 <p class="position">YUVA Chair</p>
                                                             </div>
                                                         </div>
@@ -1532,11 +1588,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".15s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Siva.jpg" alt="">
+                                                                <img src="assets/images/team/sanjay1.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Siva Santhosh</a></h4>
+                                                                <h4><a><br>Sanjay Balagopal</a></h4>
                                                                 <p class="position">YUVA Co Chair</p>
                                                             </div>
                                                         </div>
@@ -1544,35 +1600,23 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".20s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Joshna james.JPG" alt="">
+                                                                <img src="assets/images/team/Vaishnavi B.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Joshna James</a></h4>
-                                                                <p class="position">Chair - Accessibility</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".25s">
-                                                            <div class="img-holder">
-                                                                <img src="assets/images/team/charanyaa1.png" alt="">
-                                                            </div>
-                                                            <div class="text text-center">
-                                                                
-                                                                <h4><a><br>Charanya R</a></h4>
-                                                                <p class="position">Co Chair - Accessibility</p>
+                                                                <h4><a><br>Vaishnavi B</a></h4>
+                                                                <p class="position">Secretary</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".30s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Pritika.jpg" alt="">
+                                                                <img src="assets/images/team/Heemanthz Sai Krishna.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Pritika K</a></h4>
+                                                                <h4><a><br>Heemanthz</a></h4>
                                                                 <p class="position">Chair - Arts and Culture</p>
                                                             </div>
                                                         </div>
@@ -1580,35 +1624,23 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".35s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/guna1.jpeg" alt="">
+                                                                <img src="assets/images/team/Amruthavarshini S R.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Gunasekar K</a></h4>
-                                                                <p class="position">Chair - Climate Change</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
-                                                            <div class="img-holder">
-                                                                <img src="assets/images/team/linghesh2.jpg" alt="">
-                                                            </div>
-                                                            <div class="text text-center">
-                                                               
-                                                                <h4><a><br>Linghesh B</a></h4>
-                                                                <p class="position">Co Chair - Climate Change</p>
+                                                                <h4><a><br>Amurthavarshini S R</a></h4>
+                                                                <p class="position">Co Chair - Arts and Culture</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/Nivedhitha1.jpg" alt="">
+                                                                <img src="assets/images/team/Nivash.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Nivedhitha G K</a></h4>
+                                                                <h4><a><br>Nivash</a></h4>
                                                                 <p class="position">Chair - E & I</p>
                                                             </div>
                                                         </div>
@@ -1616,11 +1648,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeyanth.jpeg" alt="">
+                                                                <img src="assets/images/team/Madhumitha Praksh.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Jeyanth</a></h4>
+                                                                <h4><a><br>Madhumitha Prakash</a></h4>
                                                                 <p class="position">Co Chair - E & I</p>
                                                             </div>
                                                         </div>
@@ -1628,11 +1660,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/roshni.png" alt="">
+                                                                <img src="assets/images/team/Nivedha S.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Roshni K S</a></h4>
+                                                                <h4><a><br>Nivedha S</a></h4>
                                                                 <p class="position">Chair - Health</p>
                                                             </div>
                                                         </div>
@@ -1640,11 +1672,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/ramya.png" alt="">
+                                                                <img src="assets/images/team/Panbalan P K.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Ramya Kumari M</a></h4>
+                                                                <h4><a><br>Panbalan P K</a></h4>
                                                                 <p class="position">Co Chair - Health</p>
                                                             </div>
                                                         </div>
@@ -1652,11 +1684,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/varsheni.png" alt="">
+                                                                <img src="assets/images/team/Srivats V S.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Varsheni S</a></h4>
+                                                                <h4><a><br>Srivats V S</a></h4>
                                                                 <p class="position">Chair - Masoom</p>
                                                             </div>
                                                         </div>
@@ -1664,11 +1696,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/trisha.jpeg" alt="">
+                                                                <img src="assets/images/team/Rishikaa.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Thrisha</a></h4>
+                                                                <h4><a><br>Rishikaa</a></h4>
                                                                 <p class="position">Co Chair - Masoom</p>
                                                             </div>
                                                         </div>
@@ -1676,11 +1708,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/mogesh1.jpeg" alt="">
+                                                                <img src="assets/images/team/Vishal Chandar B.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Mogesh Kanna S</a></h4>
+                                                                <h4><a><br>Vishal Chandar B</a></h4>
                                                                 <p class="position">Chair - Road Safety</p>
                                                             </div>
                                                         </div>
@@ -1688,11 +1720,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/swathi.jpg" alt="">
+                                                                <img src="assets/images/team/Kaushik K.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Swathi G</a></h4>
+                                                                <h4><a><br>Kaushik K</a></h4>
                                                                 <p class="position">Co Chair - Road Safety</p>
                                                             </div>
                                                         </div>
@@ -1700,11 +1732,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/dharani.jpeg" alt="">
+                                                                <img src="assets/images/team/Pavithra M.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Dharani J S</a></h4>
+                                                                <h4><a><br>Pavithra M</a></h4>
                                                                 <p class="position">Chair - Rural Initiative</p>
                                                             </div>
                                                         </div>
@@ -1712,11 +1744,11 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/kavvya.jpeg" alt="">
+                                                                <img src="assets/images/team/Nithish S.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                
-                                                                <h4><a><br>Kavvya J E</a></h4>
+                                                                <h4><a><br>Nithish S</a></h4>
                                                                 <p class="position">Co Chair - Rural Initiative</p>
                                                             </div>
                                                         </div>
@@ -1724,70 +1756,66 @@
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/mithran1.jpeg" alt="">
+                                                                <img src="assets/images/team/Soorya S.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Mithran</a></h4>
-                                                                <p class="position">Chair - Sports</p>
+                                                                <h4><a><br>Soorya S</a></h4>
+                                                                <p class="position">Chair - Sustainable Development</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeffrey.jpg" alt="">
+                                                                <img src="assets/images/team/Hefwin Sharon H.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Jeffrey Hamlin V</a></h4>
-                                                                <p class="position">Co Chair - Sports</p>
+                                                                <h4><a><br>Hefwin Sharon H</a></h4>
+                                                                <p class="position">Co Chair - Sustainable Development</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/mirdhula.png" alt="">
+                                                                <img src="assets/images/team/Sahithya S M.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Mridhula B</a></h4>
-                                                                <p class="position">Communications Head</p>
+                                                                <h4><a><br>Sahithya S M</a></h4>
+                                                                <p class="position">Chair - Membership Engagement</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
                                                         <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/jeci1.jpeg" alt="">
+                                                                <img src="assets/images/team/Mohamed Ashiq B.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Jeciyazhini J</a></h4>
-                                                                <p class="position">Design Head</p>
+                                                                <h4><a><br>Mohamed Ashiq B</a></h4>
+                                                                <p class="position">Co Chair - Membership Engagement</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mx-auto col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".40s">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
                                                             <div class="img-holder">
-                                                                <img src="assets/images/team/shreeya.jpeg" alt="">
+                                                                <img src="assets/images/team/Gowtham J.jpg" alt="">
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Shreeeeeeeeeeeya</a></h4>
-                                                                <p class="position">Editorial Head</p>
+                                                                <h4><a><br>Gowtham J</a></h4>
+                                                                <p class="position">Chair - Swachh Bharat</p>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    
-                                                    
-                                                     
+                                                    </div>    
                                                 </div>
                                             </div>
                                         </section>
-                                        <button onclick="closePopup3()">Close</button>
                                     </div> 
                                 </div>
                                 <div class="text text-center">
@@ -1944,35 +1972,47 @@
         <!--====== Main js ======-->
         <script src="assets/js/theme.js"></script>
         <script>
+            const overlay = document.getElementById('overlay');
+
             function openPopup1() {
                 document.getElementById("overlay1").style.display = "block";
                 document.getElementById("popup1").style.display = "block";
                 document.getElementById("footer-area").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'hidden';
             }
         
             function closePopup1() {
                 document.getElementById("overlay1").style.display = "none";
                 document.getElementById("popup1").style.display = "none";
-                document.getElementById("footer-area").style.display = "block";
+                document.getElementById("footer-area").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'auto';
             }
+            overlay.addEventListener('click', function(event) {
+    if (event.target === popupOverlay) {
+      closePopup1();
+    }
+  });
             function openPopup2() {
                 document.getElementById("overlay2").style.display = "block";
                 document.getElementById("popup2").style.display = "block";
                 document.getElementById("footer-area").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'hidden';
             }
         
             function closePopup2() {
                 document.getElementById("overlay2").style.display = "none";
                 document.getElementById("popup2").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'auto';
             }
             function openPopup3() {
                 document.getElementById("overlay3").style.display = "block";
                 document.getElementById("popup3").style.display = "block";
                 document.getElementById("footer-area").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'hidden';
             }
         
@@ -1980,9 +2020,11 @@
                 document.getElementById("overlay3").style.display = "none";
                 document.getElementById("popup3").style.display = "none";
                 document.getElementById("footer-area").style.display = "none";
+                document.getElementById("header-area").style.display="none";
                 document.body.style.overflow = 'hidden';
             }
         </script>
+          
 
     </body>
 </html>
