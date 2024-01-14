@@ -63,10 +63,10 @@
     position: fixed;
     width: 80%;
     height: 80%;
-    top: 60%;
+    top: 50%;
     left: 50%;
-    bottom: 60%;
-    transform: translate(-50%, -55%);
+    bottom: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -908,7 +908,7 @@
                                                     <div class="col-lg-8">
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
                                                             <!--<span class="sub-title st-one">Council Members</span>-->
-                                                            <h4 style= "color:#5956e9;">More than a Team, a Force for Positive Transformation  Yuva  2022 - 2023</h4>
+                                                            <h4 style= "color:#5956e9;">More than a Team, a Force for Positive Transformation<br><b>YUVA  2022 - 23</b></h4>
                                                             <br>
                                                             <h2>Council Members</h2>
                                                         </div>
@@ -1469,7 +1469,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-lg-8">
                                                         <div class="section-title text-center mb-55 wow fadeInUp">
-                                                            <h4 style= "color:#5956e9;">Elevating youth voices, empowering future leaders  Yuva Club 2021 - 2022</h4>
+                                                            <h4 style= "color:#5956e9;">Elevating Youth Voices, Empowering Future Leaders<br>YUVA 2021 - 22</h4>
                                                             <br>
                                                             <h2>Council Members</h2>
                                                         </div>
@@ -2089,7 +2089,6 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -2253,8 +2252,8 @@
             function closePopup1() {
                 document.getElementById("overlay1").style.display = "none";
                 document.getElementById("popup1").style.display = "none";
-                document.getElementById("footer-area").style.display = "none";
-                document.getElementById("header-area").style.display="block";
+                document.getElementById("footer-area").style.display = "";
+                document.getElementById("header-area").style.display="";
                 document.removeEventListener('click', closePopupOutside1);
                 document.body.style.overflow = 'auto';
             }
@@ -2288,7 +2287,8 @@
             function closePopup2() {
                 document.getElementById("overlay2").style.display = "none";
                 document.getElementById("popup2").style.display = "none";
-                document.getElementById("header-area").style.display="block";
+                document.getElementById("footer-area").style.display = "";
+                document.getElementById("header-area").style.display="";
                 document.removeEventListener('click', closePopupOutside2);
                 document.body.style.overflow = 'auto';
             }
@@ -2316,8 +2316,8 @@
             function closePopup3() {
                 document.getElementById("overlay3").style.display = "none";
                 document.getElementById("popup3").style.display = "none";
-                document.getElementById("footer-area").style.display = "none";
-                document.getElementById("header-area").style.display="block";
+                document.getElementById("footer-area").style.display = "";
+                document.getElementById("header-area").style.display="";
                 document.removeEventListener('click', closePopupOutside3);
                 document.body.style.overflow = 'hidden';
             }
