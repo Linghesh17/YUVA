@@ -84,20 +84,28 @@
             cursor: pointer;
             
         }
-        .popup-text {
-      display: none;
+      
+    .images:hover .img-text {
+      display: block;
+    }
+    .images:hover img {
+      filter: blur(5px); /* Adjust the blur amount as needed */
+    }
+    .img-text {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgba(13, 12, 12, 0.8);
-      padding: 50px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      z-index: 2;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    .img-holder:hover .popup-text {
-      display: block;
+
+    .team-item:hover .img-text {
+      opacity: 1;
     }
 
     </style>
@@ -911,8 +919,9 @@
                         </div> -->
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="team-item mb-55 wow fadeInUp" data-wow-delay=".45s">
-                                <div class="img-holder">
+                                <div class="img-holder images" >
                                     <img src="assets/images/team/madhuvantichair.png" alt="" id="triggerImage" onclick="openPopup1()" style="width: 100%; height: auto;" > 
+                                    <div class="img-text">Hover for more information</div>
                                     <div class="overlay" id="overlay1"></div>
                                     <div class="pop" id="popup1" >
                                         <section class="team-area team-area-v2 pt-30 pb-130">
@@ -2126,7 +2135,7 @@
                                                             </div>
                                                             <div class="text text-center">
                                                                 
-                                                                <h4><a><br>Sanjay rajagopal</a></h4>
+                                                                <h4><a><br>Sanjay Balagopal</a></h4>
                                                                 <p class="position">YUVA Co Chair</p>
                                                             </div>
                                                         </div>
