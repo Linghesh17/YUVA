@@ -2042,11 +2042,11 @@ button {
 
 /* Portfolio Style two */
 
-.portfolio-style-two:hover .img-holder .portfolio-hover{
+.portfolio-style-two .img-holder .portfolio-hover{
     visibility: visible;
     opacity: 1;
 }
-.portfolio-style-two:hover .img-holder .portfolio-hover .hover-content{
+.portfolio-style-two .img-holder .portfolio-hover .hover-content{
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
             transform: translateY(0px);
@@ -2067,15 +2067,15 @@ button {
             align-items: flex-end;
     padding: 30px 20px;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
 .portfolio-style-two .img-holder .portfolio-hover .hover-content{
-    -webkit-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
