@@ -306,7 +306,7 @@
 
     //===== Wow js
     
-    // new WOW().init();
+     new WOW().init();
 
     // Item Active
     $('.counter-area-v2').on('mouseover', '.counter-item', function() {
