@@ -22,6 +22,35 @@
                 max-width: 600px; 
                 margin: 0 auto; 
             }
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        #back-to-top {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #back-to-top img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
          
     
 
@@ -174,6 +203,7 @@
         <section class="about-area about-area-v1 position-relative pt-130">
             <div  class="container">
                 <div class="row justify-content-center">
+                    <br>
                     <div class=" col-lg-6 col-xl-6">
                         <div class="img-holder video-container wow fadeInLeft">
                             <div style="border-radius: 90px; overflow: hidden;">
@@ -1310,6 +1340,14 @@
             </div>
             <div id="curator-feed-default-feed-layout"></div>
         </div>
+    </div>
+
+    <div id="back-to-top" onclick="redirectToSpotify()">
+        <img src="assets/images/podcast/spotify.png" alt="">
+        Check out our Spotify
+    </div>
+
+
         <!--====== End Instafeed Section ======-->
         <!--====== Start Footer ======-->
        <footer class="footer-area page-footer light-gray-bg">
@@ -1395,6 +1433,21 @@
             i.src="https://cdn.curator.io/published/d6f5185b-00dc-4442-b294-e30a69a6be65.js";
             e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
             })();
+            window.onscroll = function() { scrollFunction() };
+    
+            function scrollFunction() {
+                var backToTopButton = document.getElementById("back-to-top");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+    
+            function redirectToSpotify() {
+                window.location.href = "https://open.spotify.com/show/13OYvzZo5LqlA2pmu5EN9J?si=ff21e2c791a64fc6";
+            }
         </script>
+    
     </body>
 </html>
