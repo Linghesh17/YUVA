@@ -4780,29 +4780,6 @@ button {
     height: 60%;
     background: url(../images/footer/footer-page-bg-1.png) no-repeat left;
 }
-/*==========================
-Podcast page
-==========================*/
-.portfolio-area-v1{
-	font-size: 24px;
-    padding: 17px 35px;
-    z-index: 1;
-    margin-bottom: 25px;
-}
-.portfolio-area-v1:after{position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    background: url(../images/border-1.png) no-repeat;
-    background-size: 100% 100%;
-    z-index: -1;
-    background-position: bottom;
-    top: auto;
-    bottom: 0;
-    height: 100%;
-}
-
-
 /*---==========================
     End Footer css 
 =========================---*/
