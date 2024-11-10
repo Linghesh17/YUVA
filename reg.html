@@ -172,24 +172,41 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-title text-center mb-55 wow fadeInUp" id="register">
-                            <h3>Membership drive</h3> 
-                            <h1 class="bounce">Coming Soon...</h1>
-<style>
-  .bounce {
-    font-size: 64px;
-    color: black;
-    animation: bounce 1.5s ease-in-out infinite;
-  }
+                              <title>Coming Soon</title>
+  <style>
+    h1 {
+      font-size: 72px;
+      font-weight: bold;
+      color: black;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      margin-top: 200px;
+      text-transform: uppercase;
+    }
 
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-20px); }
-    50% { transform: translateY(0); }
-    75% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-  }
-</style>
+    h1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      animation: shimmer 2s infinite;
+      background-size: 200% 100%;
+    }
 
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Coming Soon...</h1>
+</body>
+</html>
 
                             
                         </div>
