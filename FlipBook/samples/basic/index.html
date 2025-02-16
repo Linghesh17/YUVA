@@ -8,10 +8,165 @@
 <meta name="viewport" content="width = 1050, user-scalable = no" />
 <script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+<link rel="shortcut icon" href="images/samples/basic/image/favicon.ico" type="image/png">
+<!--====== Default css ======-->
+<link rel="stylesheet" href="assets/css/default.css">
+<!--====== Style css ======-->
+<link rel="stylesheet" href="assets/css/style.css">
+<!--====== Responsive css ======-->
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
+<title>Yi YUVA REC</title>
+<style>
+    body {
+        display: flex;
+        font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            transition: transform 0.3s ease-in-out;
+            left: 0;
+        }
+		.sidebar.hidden {
+            transform: translateX(-100%);
+        }
+		.logo {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+			margin-bottom: 25px;
+            max-width: 100%;
+            height: auto;
+        }
+        .close-btn {
+			margin-bottom: 5px;
+            position: absolute;
+            top: -8px;
+            right: 10px;
+            color:grey;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 26px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 25px;
+        }
+        .menu-btn {
+            position: fixed;
+            top: 8px;
+            left: 7px;
+            background:none;
+            color:grey;
+            border: none;
+            padding: 5px 5px;
+            font-size: 26px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none;
+        }
+        .sidebar.hidden + .menu-btn {
+            display: block;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            transition: margin-left 0.3s ease-in-out;
+        }
+        .sidebar.hidden + .content {
+            margin-left: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+    .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    .logo img {
+		margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+	
+    .sidebar h3 {
+		color:grey;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+		color:grey;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #f4f4f4;
+    }
+	#close-btn {
+      font-size: 25px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .sidebar ul li:hover {
+        background:#f4f4f4;
+    }
+
+    .flipbook-viewport {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		
+    }
+	
+</style>
 </head>
 <body>
 
+	<div class="sidebar" id="sidebar">
+		<div class="logo">
+			<button class="close-btn" onclick="toggleSidebar()">×</button>
+            <img src="images/samples/basic/image/logo-1.png" alt="Yi Future 4.0 Logo">
+        </div>
+	
+		<h3>Contents</h3>
+		<ul>
+			<li onclick="goToPage(1)">Front Cover</li>
+			<li onclick="goToPage(6)">Message from Yi National</li>
+			<li onclick="goToPage(11)">Introduction to YI</li>
+			<li onclick="goToPage(12)">Yuva Stakeholders</li>
+			<li onclick="goToPage(13)">Future 4.0 Initiative</li>
+			<li onclick="goToPage(18)">Compilation of Research</li>
+			<li onclick="goToPage(82)">Highlights and Photos</li>
+
+		</ul>
+	</div>
+	<button class="menu-btn" id="menuBtn" onclick="toggleSidebar()">☰ Index</button>
+	
 <div class="flipbook-viewport">
+	<div><h2 align="center"class="title"><br>Future 4.0 Advocacy Documents 2024 - Health</h2></div>
 	<div class="container">
 		<div class="flipbook">
 			<div style="background-image:url(pages/1.jpg)"></div>
@@ -113,6 +268,21 @@
 
 
 <script type="text/javascript">
+	 function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let menuBtn = document.getElementById("menuBtn");
+
+            sidebar.classList.toggle("hidden");
+
+            if (sidebar.classList.contains("hidden")) {
+                menuBtn.style.display = "block";
+            } else {
+                menuBtn.style.display = "none";
+            }
+        }
+	function goToPage(pageNumber) {
+    $('.flipbook').turn('page', pageNumber);
+}
 
 function loadApp() {
 
@@ -152,7 +322,6 @@ yepnope({
 	both: ['css/basic.css'],
 	complete: loadApp
 });
-
 </script>
 
 </body>
