@@ -17,10 +17,15 @@
                 margin: 0 auto; 
                 }
             }
-            #curator-feed-default-feed-layout {
-                padding-top: 50px;
-                max-width: 600px; 
-                margin: 0 auto; 
+           @media screen and (max-width: 767px) {
+           #curator-feed-default-feed-layout {
+           padding-top: 50px;
+           max-width: 100%;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+               }
             }
             body {
             font-family: Arial, sans-serif;
