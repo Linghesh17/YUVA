@@ -9,14 +9,18 @@
         <!--====== Title ======-->
         <title>Yi YUVA REC</title>
         <style>
-           @media screen and (max-width: 768px) {
-    .instagram-media {
+        @media (max-width: 768px) {
+    .slide-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        width: 100% !important;
-        max-width: 90%;
+        height: 100vh; /* Full screen height */
+        text-align: center; /* Ensures text is centered */
+    }
+
+    .slide {
+        max-width: 90%; /* Adjust width to fit the screen */
+        max-height: 90vh; /* Ensure it doesn't overflow */
     }
 }
             body {
